@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-    res.send("Hello World");
+    res.render("<h1>Hello World</h1> <p>Hello World from Express</p>");
 });
 app.use("/api/users", usersRouter);
 app.use("/api/pets", petsRouter);
